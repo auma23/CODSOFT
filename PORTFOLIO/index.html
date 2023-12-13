@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diana Auma - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Tailwind CSS CDN and link to your local CSS file -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> 
@@ -11,23 +12,22 @@
 <body class="font-sans bg-gray-100">
 
     <!-- Header Section -->
-    <header class="bg-green-900 text-white p-4">
+    <header class="bg-green-900 text-white p-4 top-0 z-10 fixed w-full">
         <nav class="flex items-center justify-between">
             <div class="text-2xl font-bold">Diana Auma</div>
             <div class="flex items-center space-x-4">
-                <a href="#about" class="hover:text-yellow-500">About</a>
-                <a href="#skills" class="hover:text-yellow-500">Skills</a>
-                <a href="#projects" class="hover:text-yellow-500">Projects</a>
-                <a href="#resume" class="hover:text-yellow-500">Resume</a>
-                <a href="#contact" class="hover:text-yellow-500">Contact</a>
+                <a href="#about" class="hover:text-green-500">About</a>
+                <a href="#skills" class="hover:text-green-500">Skills</a>
+                <a href="#projects" class="hover:text-green-500">Projects</a>
+                <a href="#resume" class="hover:text-green-500">Resume</a>
+                <a href="#contact" class="hover:text-green-500">Contact</a>
             </div>
         </nav>
         <div class="text-lg">Web Developer</div>
     </header>
 
     <!-- About Section -->
-    <!-- About Section -->
-<section id="about" class="p-4 flex items-center border border-gray-300 ml-4 mt-4 mb-4 mr-4">
+<section id="about" class="p-4 flex items-center border border-gray-300 ml-4 mt-2 pt-40 mb-4 mr-4">
     <!-- Image on the left -->
     <div class="flex-shrink-0 rounded-full overflow-hidden h-48 w-48">
         <img src="./images/dee.jpg" alt="Diana Auma"  class="w-full h-full object-cover">
@@ -42,7 +42,7 @@
             <br>My creative process is streamlined by frameworks like React, Django, and Ruby on Rails, which enable me to realize ideas elegantly and efficiently. My journey through web development is proof of my flexibility and unwavering proficiency. 
             <br>My story unfolds, taking us from virtual hallways to real-world halls, and it leaves a lasting impression on the IT world. The parallel stories of my on-screen and off-screen odysseys intersect as I code across virtual environments, forming a story that is all mine. Diana Auma is a luminary in the field of coding, where her artistic and architectural talents are combined to create digital experiences that have a lasting impact.
         </p> <br> <br>
-        <button class="bg-green-900 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        <button class="bg-green-900 hover:bg-green-500 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
             Read More
         </button>
         
@@ -51,55 +51,283 @@
 
 
     <!-- Skills Section -->
-    <section id="skills" class="p-4">
-        <h2 class="text-2xl font-bold mb-4">Skills</h2>
-        <ul class="list-none">
-            <li class="inline-block mr-2">HTML5</li>
-            <li class="inline-block mr-2">CSS3</li>
-            <li class="inline-block mr-2">JavaScript</li>
-            <!-- Add more skills as needed -->
-        </ul>
+    <section id="skills" class="p-4 pt-40">
+        <h2 class="text-2xl font-bold mb-4 text-green-900">Skills</h2>
+       <p>My expertise includes working with Node.js and Ruby on Rails for server-side development, which guarantees scalability and quick application development. My toolset for developing effective and maintainable solutions includes Django and Python. I give structured, semantically meaningful material with aesthetically pleasing designs first priority when it comes to HTML and CSS. In addition, I use Firebase for real-time data synchronization and SQL to manage relational databases. My styling process is streamlined for effective user interfaces with Tailwind CSS. All things considered, my varied skill set allows me to provide creative and practical solutions in a range of web development fields.</p> <br> <br>
+         <div class="grid lg:grid-cols-6">
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/js.jpg"
+                    alt="JavaScript" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">JavaScript</h4>
+                    <p class="leading-normal text-gray-700">Skilled in JavaScript, bringing interactivity and dynamic functionality to web applications</p>
+                </div>
+            </div>
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/react.jpg"
+                    alt="react js" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">React Js</h4>
+                    <p class="leading-normal text-gray-700">Proficient in React.js, specializing in building modular and scalable user interfaces for web applications</p>
+                </div>
+            </div>
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/node.jpg"
+                    alt="node js" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">Node Js</h4>
+                    <p class="leading-normal text-gray-700">Experienced in Node.js, powering server-side development with a focus on scalability and performance</p>
+                </div>
+            </div>
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/html.jpg"
+                    alt="html" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">HTML</h4>
+                    <p class="leading-normal text-gray-700">Proficient in HTML, the backbone of web development, ensuring structured and semantically meaningful content for seamless user experiences</p>
+                </div>
+            </div>
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/css.jpg"
+                    alt="CSS pic" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">CSS</h4>
+                    <p class="leading-normal text-gray-700">Skilled in CSS, shaping visually appealing and responsive designs to enhance the presentation and user interface of web applications</p>
+                </div>
+            </div>
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/ruby.jpg"
+                    alt="ruby" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">Ruby</h4>
+                    <p class="leading-normal text-gray-700">Proficient in Ruby, crafting elegant and efficient solutions for web development with a focus on simplicity and readability</p>
+                </div>
+            </div>
+        </div> <br>
+        
+        <div class="grid lg:grid-cols-6">
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/rails.jpg"
+                    alt="rails" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">Ruby on Rails</h4>
+                    <p class="leading-normal text-gray-700">Experienced in Ruby on Rails, leveraging the framework's conventions to rapidly develop robust and scalable web applications with elegant solutions</p>
+                </div>
+            </div>
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/py.jpg"
+                    alt="python" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">Python</h4>
+                    <p class="leading-normal text-gray-700">Proficient in Python, utilizing its versatility to develop efficient and maintainable solutions for web development and beyond</p>
+                </div>
+            </div>
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/dj.jpg"
+                    alt="Django" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">Django</h4>
+                    <p class="leading-normal text-gray-700">Skilled in Django, harnessing its powerful features to build secure and scalable web applications with a focus on rapid development and clean, maintainable code</p>
+                </div>
+            </div>
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/fire.jpg"
+                    alt="ruby" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">Firebase</h4>
+                    <p class="leading-normal text-gray-700">Proficient in Firebase, utilizing its real-time database and cloud services to build dynamic and scalable web applications with seamless data synchronization</p>
+                </div>
+            </div>
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/tail.jpg"
+                    alt="tailwind" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">Tailwind CSS</h4>
+                    <p class="leading-normal text-gray-700">Skilled in Tailwind CSS, streamlining the styling process with utility-first classes to create efficient, responsive, and visually appealing user interfaces</p>
+                </div>
+            </div>
+            <div class="max-w-xs mx-4 mb-2 rounded-lg shadow-lg">
+                <img class="w-full h-48"
+                    src="./images/sql.jpg"
+                    alt="sql" />
+                <div class="px-6 py-4">
+                    <h4 class="mb-3 text-xl font-semibold tracking-tight text-gray-800">SQL</h4>
+                    <p class="leading-normal text-gray-700">Proficient in SQL, adept at designing and managing relational databases to ensure efficient data storage, retrieval, and manipulation for robust web applications</p>
+                </div>
+            </div>
+        </div>
     </section>
-
+    
     <!-- Projects Section -->
-    <section id="projects" class="p-4">
-        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+    <section id="projects" class="p-4 pt-40">
+        <h2 class="text-2xl font-bold mb-4 text-green-900">Projects</h2>
 
-        <!-- Project 1 -->
-        <div class="project mb-6">
-            <h3 class="text-xl font-bold mb-2">Project Title 1</h3>
-            <img src="project1.jpg" alt="Project 1" class="rounded-lg mb-2">
-            <p class="text-gray-700">Description of Project 1.</p>
+        <div class="grid lg:grid-cols-2">
+            <div class="m-2 bg-white rounded-lg shadow-xl lg:flex lg:max-w-lg">
+                <img src="./images/project1.jpg"
+                    class="w-1/1 lg:w-1/2 rounded-l-2xl">
+                <div class="p-6 bg-gray-50">
+                    <h2 class="mb-2 text-2xl font-bold text-gray-900">Project Manager App</h2>
+                    <p class="text-gray-600">Created a feature-rich project management dashboard with integrated powerful tools for improved task tracking, teamwork, and progress tracking.</p>
+                </div>
+            </div>
+            <div class="m-2 bg-white rounded-lg shadow-xl lg:flex lg:max-w-lg">
+                <img src="./images/ecommerce1.jpg"
+                    class="w-1/1 lg:w-1/2 rounded-l-2xl">
+                <div class="p-6 bg-gray-50">
+                    <h2 class="mb-2 text-2xl font-bold text-gray-900">E-commerce Website</h2>
+                    <p class="text-gray-600">Created a dynamic e-commerce website designed to provide smooth online purchasing. The project includes an easy-to-use product catalog, secure payment channels, and responsive design.</p>
+                </div>
+            </div>
         </div>
-
-        <!-- Project 2 -->
-        <div class="project mb-6">
-            <h3 class="text-xl font-bold mb-2">Project Title 2</h3>
-            <img src="project2.jpg" alt="Project 2" class="rounded-lg mb-2">
-            <p class="text-gray-700">Description of Project 2.</p>
-        </div>
-
-        <!-- Add more projects as needed -->
     </section>
+    <!-- Contact Form Section -->
+    
 
     <!-- Resume Section -->
-    <section id="resume" class="p-4">
-        <h2 class="text-2xl font-bold mb-4">Resume</h2>
-        <p class="text-gray-700">Download my resume <a href="your-resume.pdf" target="_blank" class="text-blue-500">here</a>.</p>
+    <section id="resume" class="p-4 pt-40">
+        <h2 class="text-2xl font-bold mb-4 text-green-900">My Resume</h2>
+        <p class="text-gray-700">Download my resume <a href="https://drive.google.com/file/d/1zWbt2CvKQM5ZAf1JqpvBKVQwhbw96HHM/view?usp=sharing" target="_blank" class="text-blue-500">here</a>.</p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="p-4">
-        <h2 class="text-2xl font-bold mb-4">Contact</h2>
-        <p class="text-gray-700">Email: your@email.com</p>
-        <p class="text-gray-700">Phone: (123) 456-7890</p>
+    <section id="contact" class="p-4 pt-40">
+        <div class="flex flex-wrap">
+        <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
+            <h2 class="mb-6 text-2xl font-bold text-green-900">Contact Me</h2>
+            <p class="mb-6 text-neutral-500 dark:text-neutral-300">
+                I am dedicated to providing the best possible service, and your opinion is crucial to me. Whether you have a question, suggestion, or just want to share your experience, I will love to hear from you! Your insights help me grow and improve, ensuring I meet and exceed your expectations. <br> Don't hesitate to leave me a message; your feedback is my greatest asset.
+            </p>
+            <p class="mb-2 text-neutral-500 dark:text-neutral-300">
+              Nairobi, 43844, Kenya
+            </p>
+            <p class="mb-2 text-neutral-500 dark:text-neutral-300">
+              + 254 705 553 860
+            </p>
+            <p class="mb-2 text-neutral-500 dark:text-neutral-300">
+              dianaauma2@gmail.com
+            </p>
+          </div>
+        <div class="w-full md:w-96 md:max-w-full mx-auto">
+            <div class="p-6 border border-gray-300 sm:rounded-md">
+              <form method="POST" action="https://formspree.io/f/xpzgezva">
+                <label class="block mb-6">
+                  <span class="text-gray-700">Your name</span>
+                  <input
+                    type="text"
+                    name="name"
+                    class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                    "
+                    placeholder="Jane Doe"
+                  />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-gray-700">Email address</span>
+                  <input
+                    name="email"
+                    type="email"
+                    class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                    "
+                    placeholder="janedoe@example.com"
+                    required
+                  />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-gray-700">Message</span>
+                  <textarea
+                    name="message"
+                    class="
+                      block
+                      w-full
+                      mt-1
+                      border-gray-300
+                      rounded-md
+                      shadow-sm
+                      focus:border-indigo-300
+                      focus:ring
+                      focus:ring-indigo-200
+                      focus:ring-opacity-50
+                    "
+                    rows="3"
+                    placeholder="What's on your mind..."
+                  ></textarea>
+                </label>
+                <div class="mb-6">
+                  <button
+                    type="submit"
+                    class="
+                      h-10
+                      px-5
+                      text-white
+                      bg-green-900
+                      rounded-lg
+                      transition-colors
+                      duration-150
+                      focus:shadow-outline
+                      hover:bg-green-500
+                    "
+                  >
+                    Send Message
+                  </button>
+                </div>
+                <div>
+                 
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>  
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white text-center p-2">
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-        <!-- Additional links or information can be added here -->
+<footer class="bg-green-900 text-white text-center py-4">
+        <p>&copy; Personal Portfolio Website. All rights reserved.</p>
+        <div class="mt-4">
+            <!-- Twitter Icon and Link -->
+            <a href="https://twitter.com/DianaAuma" target="_blank" class="text-white hover:text-green-500 mx-2">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <!-- LinkedIn Icon and Link -->
+            <a href="https://www.linkedin.com/in/diana-auma/" target="_blank" class="text-white hover:text-green-500 mx-2">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <!-- GitHub Icon and Link -->
+            <a href="https://github.com/auma23/" target="_blank" class="text-white hover:text-green-500 mx-2">
+                <i class="fa fa-github"></i>
+            </a>
+        </div>
     </footer>
+    
+    
 
 </body>
 </html>
